@@ -6,6 +6,53 @@
     <title>Cash-Out</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
+<script>
+    const track = document.querySelector('.carousel-track');
+    const images = document.querySelectorAll('.gallery-img');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+
+    let index = 0;
+
+    nextBtn.addEventListener('click', () => {
+        index = (index + 1) % images.length;
+        updateCarousel();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        index = (index - 1 + images.length) % images.length;
+        updateCarousel();
+    });
+
+    function updateCarousel() {
+        track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    // Modal
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const close = document.querySelector(".close");
+
+    images.forEach(img => {
+        img.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+        });
+    });
+
+    close.onclick = function() {
+        modal.style.display = "none";
+    };
+
+    modal.onclick = function(e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+</script>
+
+
 <body>
 
     <header>
@@ -13,7 +60,43 @@
     </header>
 
     <main>
-        <p>¡¡¡Juega como un cazatesoros en un juego de aventura 3D!!!</p> 
+        <p>¡¡¡Juega como un cazatesoros en un juego de aventura 3D!!!</p>
+        <section class="trailer">
+            <h2>Trailer Oficial</h2>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/ID_DEL_VIDEO"
+                    title="Trailer Cash-Out"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- GALERÍA -->
+<section class="gallery">
+    <h2>Imágenes del Juego</h2>
+
+    <div class="carousel">
+        <button class="prev">&#10094;</button>
+
+        <div class="carousel-track">
+            <img src="img1.jpg" class="gallery-img">
+            <img src="img2.jpg" class="gallery-img">
+            <img src="img3.jpg" class="gallery-img">
+        </div>
+
+        <button class="next">&#10095;</button>
+    </div>
+</section>
+
+<!-- MODAL PARA VISTA COMPLETA -->
+<div class="modal" id="imageModal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+
         <section class ="card featured">
 
             <div class="embed">
