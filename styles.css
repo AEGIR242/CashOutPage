@@ -105,21 +105,11 @@ footer {
     overflow: hidden;
 }
 
-.carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.gallery-img {
-    min-width: 100%;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
 .prev, .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 100;
     background-color: rgba(0,0,0,0.5);
     color: white;
     border: none;
@@ -136,6 +126,17 @@ footer {
     background-color: rgba(0,0,0,0.8);
 }
 
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.gallery-img {
+    min-width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+}
 
 
 
