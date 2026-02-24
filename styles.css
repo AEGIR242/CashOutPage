@@ -7,23 +7,16 @@
 
 /* Estilo general */
 body {
-    background: linear-gradient(to bottom, #121212, #1a1a1a);
+    font-family: Arial, sans-serif;
+    background-color: #00000016;
+    text-align: center;
 }
 
 /* Header */
 header {
-    background-color: rgba(34, 34, 34, 0.9); /* Semi-transparent background */
-    border-bottom: 1px solid #00bcd4; /* Accent color border */
-}
-
-nav a:hover {
-    color: #00f0ff;
-    text-shadow: 0 0 5px #00f0ff;  /* Glow effect */
-}
-
-.gallery img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 188, 212, 0.5); /* Glowing shadow */
+    background-color: #0a5664;
+    color: white;
+    padding: 20px;
 }
 
 /* Contenido principal */
@@ -102,9 +95,7 @@ footer {
 
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
-    gap: 10px;
+    margin-top: 60px;
 }
 
 .carousel {
@@ -141,17 +132,10 @@ footer {
     width: 100%;
 }
 
-.gallery img {
-    width: 100%; /* Images fill their container */
-    height: auto;
-    object-fit: cover;
+.gallery-img {
+    min-width: 100%;
     cursor: pointer;
-    transition: transform 0.3s ease;
-}
-@media (max-width: 600px) {
-    .gallery {
-        grid-template-columns: 1fr; /* Single column on very small screens */
-    }
+    border-radius: 10px;
 }
 
 
