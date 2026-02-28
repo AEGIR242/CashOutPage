@@ -4,122 +4,247 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash-Out</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
+    <!-- HEADER -->
     <header>
-        <h1>Cash-Out</h1>
+        <div class="header-inner">
+            <div class="logo-group">
+                <span class="logo-tag">AEGIR242</span>
+                <h1 class="logo-title">CASH<span class="accent">—</span>OUT</h1>
+            </div>
+            <nav class="header-nav">
+                <a href="#about">Historia</a>
+                <a href="#trailer">Trailer</a>
+                <a href="#gallery">Galería</a>
+                <a href="#play">Jugar</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <p>¡¡¡Juega como un cazatesoros en un juego de aventura 3D!!!</p>
-        <section class="trailer">
-            <h2>Trailer Oficial</h2>
-            <div class="video-container">
-                <iframe 
-                    src="https://www.youtube.com/embed/ID_DEL_VIDEO"
-                    title="Trailer Cash-Out"
-                    frameborder="0"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </section>
-
-        <!-- GALERÍA -->
-<section class="gallery">
-    <h2>Galería del Juego</h2>
-
-    <div class="carousel">
-        <button class="prev">&#10094;</button>
-
-        <div class="carousel-track">
-            <img src="Pictures/Aegir.png" class="gallery-img">
-            <img src="Pictures/Sorcerer2.jpg" class="gallery-img">
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
         </div>
+        <div class="hero-content">
+            <p class="hero-label">Juego de Aventura 3D</p>
+            <h2 class="hero-title">Caza el tesoro.<br>Sobrevive el caos.</h2>
+            <p class="hero-sub">Un mundo lleno de peligros, recompensas ocultas y decisiones que definen tu destino.</p>
+            <div class="hero-cta">
+                <a href="#play" class="btn btn-primary">Jugar ahora</a>
+                <a href="#trailer" class="btn btn-ghost">Ver Trailer</a>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span></span>
+            <p>Scroll</p>
+        </div>
+    </section>
 
-        <button class="next">&#10095;</button>
-    </div>
-</section>
+    <main>
 
-<!-- MODAL PARA VISTA COMPLETA -->
-<div class="modal" id="imageModal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImg">
-</div>
-
-        <section class ="card featured">
-
-            <div class="embed">
-                <iframe frameborder="0" src="https://itch.io/embed/4278971" 
-                width="552" height="167"><a href="https://aegir242.itch.io/cash-out">Cash-Out by AEGIR242</a></iframe>"
+        <!-- ABOUT -->
+        <section class="about" id="about">
+            <div class="section-label">01 — Historia</div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">¿De qué trata<br><span class="accent-text">Cash-Out</span>?</h2>
+                    <p>Sumérgete en un mundo 3D donde cada rincón esconde peligros y riquezas. Como cazatesoros, tu misión es explorar, sobrevivir y salir con el mayor botín posible antes de que el tiempo se agote.</p>
+                    <p>Enfrenta trampas, enemigos y puzzles mientras descifras los secretos de un mundo lleno de misterio y adrenalina.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-num">3D</span>
+                        <span class="stat-label">Mundo inmersivo</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">∞</span>
+                        <span class="stat-label">Recompensas ocultas</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">1</span>
+                        <span class="stat-label">Oportunidad de escapar</span>
+                    </div>
+                </div>
             </div>
         </section>
-        
-        <p class="small muted">
-            <a href="https://aegir242.itch.io/cash-out" target="_blank">
-                <button>Abrir en itch.io</button>
-            </a>
-        </p>
+
+        <!-- TRAILER -->
+        <section class="trailer-section" id="trailer">
+            <div class="section-label">02 — Trailer</div>
+            <h2 class="section-title">Trailer <span class="accent-text">Oficial</span></h2>
+            <div class="video-wrapper">
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <div class="play-icon">▶</div>
+                        <p>Trailer próximamente</p>
+                    </div>
+                    <!-- Descomentar cuando tengas el ID del video:
+                    <iframe
+                        src="https://www.youtube.com/embed/ID_DEL_VIDEO"
+                        title="Trailer Cash-Out"
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+                    -->
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section class="gallery-section" id="gallery">
+            <div class="section-label">03 — Galería</div>
+            <h2 class="section-title">Capturas <span class="accent-text">del Juego</span></h2>
+            <div class="carousel">
+                <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+                <div class="carousel-track-wrapper">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="Pictures/Aegir.png" alt="Screenshot 1" class="gallery-img">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="Pictures/Sorcerer2.jpg" alt="Screenshot 2" class="gallery-img">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" aria-label="Siguiente">&#10095;</button>
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+        </section>
+
+        <!-- PLAY / EMBED -->
+        <section class="play-section" id="play">
+            <div class="section-label">04 — Jugar</div>
+            <h2 class="section-title">Juega <span class="accent-text">Ahora</span></h2>
+            <div class="play-container">
+                <div class="itch-embed-wrapper">
+                    <iframe
+                        frameborder="0"
+                        src="https://itch.io/embed/4278971"
+                        width="552"
+                        height="167">
+                        <a href="https://aegir242.itch.io/cash-out">Cash-Out by AEGIR242</a>
+                    </iframe>
+                </div>
+                <a href="https://aegir242.itch.io/cash-out" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    Abrir en itch.io
+                </a>
+            </div>
+        </section>
+
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 - AEGIR242</p>
+        <div class="footer-inner">
+            <span class="footer-logo">CASH<span class="accent">—</span>OUT</span>
+            <p class="footer-copy">© 2026 AEGIR242. Todos los derechos reservados.</p>
+            <a href="https://aegir242.itch.io/cash-out" target="_blank" rel="noopener noreferrer" class="footer-link">itch.io ↗</a>
+        </div>
     </footer>
+
+    <!-- MODAL -->
+    <div class="modal" id="imageModal" role="dialog" aria-modal="true">
+        <button class="modal-close" id="modalClose" aria-label="Cerrar">&times;</button>
+        <img class="modal-img" id="modalImg" alt="Imagen ampliada">
+    </div>
 
     <script>
     document.addEventListener("DOMContentLoaded", function () {
+
+        // --- CAROUSEL ---
         const track = document.querySelector('.carousel-track');
+        const slides = document.querySelectorAll('.carousel-slide');
         const images = document.querySelectorAll('.gallery-img');
         const prevBtn = document.querySelector('.prev');
         const nextBtn = document.querySelector('.next');
-
+        const dotsContainer = document.getElementById('carouselDots');
         let index = 0;
 
-        nextBtn.addEventListener('click', () => {
-            index = (index + 1) % images.length;
-            updateCarousel();
+        // Crear dots
+        slides.forEach((_, i) => {
+            const dot = document.createElement('button');
+            dot.classList.add('dot');
+            dot.setAttribute('aria-label', `Ir a imagen ${i + 1}`);
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goTo(i));
+            dotsContainer.appendChild(dot);
         });
 
-        prevBtn.addEventListener('click', () => {
-            index = (index - 1 + images.length) % images.length;
-            updateCarousel();
-        });
-
-        function updateCarousel() {
-            track.style.transform = `translateX(-${index * 100}%)`;
+        function updateDots() {
+            document.querySelectorAll('.dot').forEach((d, i) => {
+                d.classList.toggle('active', i === index);
+            });
         }
 
-        // Modal
+        function goTo(i) {
+            index = i;
+            track.style.transform = `translateX(-${index * 100}%)`;
+            updateDots();
+        }
+
+        nextBtn.addEventListener('click', () => goTo((index + 1) % slides.length));
+        prevBtn.addEventListener('click', () => goTo((index - 1 + slides.length) % slides.length));
+
+        // Swipe en móvil
+        let startX = 0;
+        track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; });
+        track.addEventListener('touchend', e => {
+            const diff = startX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 50) diff > 0 ? goTo((index + 1) % slides.length) : goTo((index - 1 + slides.length) % slides.length);
+        });
+
+        // --- MODAL ---
         const modal = document.getElementById("imageModal");
         const modalImg = document.getElementById("modalImg");
-        const close = document.querySelector(".close");
+        const modalClose = document.getElementById("modalClose");
 
         images.forEach(img => {
-            img.addEventListener("click", function() {
-                modal.style.display = "flex";
+            img.addEventListener("click", function () {
                 modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
             });
         });
 
-        close.onclick = function() {
-            modal.style.display = "none";
-        };
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
 
-        modal.onclick = function(e) {
-            if (e.target === modal) {
-                modal.style.display = "none";
-            }
-        };
-        updateCarousel(); // inicia correctamente
+        modalClose.addEventListener('click', closeModal);
+        modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+        // --- SCROLL ANIMATIONS ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.about-grid, .video-wrapper, .carousel, .play-container, .stat-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // --- SMOOTH SCROLL ---
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
     });
     </script>
-
 </body>
-
-
-
-
-
 </html>
