@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash-Out</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,12 +13,12 @@
         <div class="header-inner">
             <div class="logo-group">
                 <span class="logo-tag">AEGIR242</span>
-                <h1 class="logo-title">CASH<span class="accent">—</span>OUT</h1>
+                <h1 class="logo-title">CASH<span class="accent">&#8212;</span>OUT</h1>
             </div>
             <nav class="header-nav">
                 <a href="#about">Historia</a>
                 <a href="#trailer">Trailer</a>
-                <a href="#gallery">Galería</a>
+                <a href="#gallery">Galer&#237;a</a>
                 <a href="#play">Jugar</a>
             </nav>
         </div>
@@ -52,12 +49,12 @@
     <main>
 
         <!-- ABOUT -->
-        <section class="about" id="about">
-            <div class="section-label">01 — Historia</div>
+        <section class="about reveal" id="about">
+            <div class="section-label">01 &#8212; Historia</div>
             <div class="about-grid">
                 <div class="about-text">
-                    <h2 class="section-title">¿De qué trata<br><span class="accent-text">Cash-Out</span>?</h2>
-                    <p>Sumérgete en un mundo 3D donde cada rincón esconde peligros y riquezas. Como cazatesoros, tu misión es explorar, sobrevivir y salir con el mayor botín posible antes de que el tiempo se agote.</p>
+                    <h2 class="section-title">&#191;De qu&#233; trata<br><span class="accent-text">Cash-Out</span>?</h2>
+                    <p>S&#250;mergete en un mundo 3D donde cada rinc&#243;n esconde peligros y riquezas. Como cazatesoros, tu misi&#243;n es explorar, sobrevivir y salir con el mayor bot&#237;n posible antes de que el tiempo se agote.</p>
                     <p>Enfrenta trampas, enemigos y puzzles mientras descifras los secretos de un mundo lleno de misterio y adrenalina.</p>
                 </div>
                 <div class="about-stats">
@@ -66,7 +63,7 @@
                         <span class="stat-label">Mundo inmersivo</span>
                     </div>
                     <div class="stat-card">
-                        <span class="stat-num">∞</span>
+                        <span class="stat-num">&#8734;</span>
                         <span class="stat-label">Recompensas ocultas</span>
                     </div>
                     <div class="stat-card">
@@ -78,16 +75,16 @@
         </section>
 
         <!-- TRAILER -->
-        <section class="trailer-section" id="trailer">
-            <div class="section-label">02 — Trailer</div>
+        <section class="trailer-section reveal" id="trailer">
+            <div class="section-label">02 &#8212; Trailer</div>
             <h2 class="section-title">Trailer <span class="accent-text">Oficial</span></h2>
             <div class="video-wrapper">
                 <div class="video-container">
                     <div class="video-placeholder">
-                        <div class="play-icon">▶</div>
-                        <p>Trailer próximamente</p>
+                        <div class="play-icon">&#9654;</div>
+                        <p>Trailer pr&#243;ximamente</p>
                     </div>
-                    <!-- Descomentar cuando tengas el ID del video:
+                    <!-- Reemplaza el div.video-placeholder por este iframe cuando tengas el ID:
                     <iframe
                         src="https://www.youtube.com/embed/ID_DEL_VIDEO"
                         title="Trailer Cash-Out"
@@ -100,8 +97,8 @@
         </section>
 
         <!-- GALLERY -->
-        <section class="gallery-section" id="gallery">
-            <div class="section-label">03 — Galería</div>
+        <section class="gallery-section reveal" id="gallery">
+            <div class="section-label">03 &#8212; Galer&#237;a</div>
             <h2 class="section-title">Capturas <span class="accent-text">del Juego</span></h2>
             <div class="carousel">
                 <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
@@ -120,9 +117,9 @@
             </div>
         </section>
 
-        <!-- PLAY / EMBED -->
-        <section class="play-section" id="play">
-            <div class="section-label">04 — Jugar</div>
+        <!-- PLAY -->
+        <section class="play-section reveal" id="play">
+            <div class="section-label">04 &#8212; Jugar</div>
             <h2 class="section-title">Juega <span class="accent-text">Ahora</span></h2>
             <div class="play-container">
                 <div class="itch-embed-wrapper">
@@ -135,7 +132,7 @@
                     </iframe>
                 </div>
                 <a href="https://aegir242.itch.io/cash-out" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                    Abrir en itch.io
+                    Abrir en itch.io &#8599;
                 </a>
             </div>
         </section>
@@ -145,9 +142,9 @@
     <!-- FOOTER -->
     <footer>
         <div class="footer-inner">
-            <span class="footer-logo">CASH<span class="accent">—</span>OUT</span>
-            <p class="footer-copy">© 2026 AEGIR242. Todos los derechos reservados.</p>
-            <a href="https://aegir242.itch.io/cash-out" target="_blank" rel="noopener noreferrer" class="footer-link">itch.io ↗</a>
+            <span class="footer-logo">CASH<span class="accent">&#8212;</span>OUT</span>
+            <p class="footer-copy">&#169; 2026 AEGIR242. Todos los derechos reservados.</p>
+            <a href="https://aegir242.itch.io/cash-out" target="_blank" rel="noopener noreferrer" class="footer-link">itch.io &#8599;</a>
         </div>
     </footer>
 
@@ -160,57 +157,55 @@
     <script>
     document.addEventListener("DOMContentLoaded", function () {
 
-        // --- CAROUSEL ---
-        const track = document.querySelector('.carousel-track');
-        const slides = document.querySelectorAll('.carousel-slide');
-        const images = document.querySelectorAll('.gallery-img');
-        const prevBtn = document.querySelector('.prev');
-        const nextBtn = document.querySelector('.next');
-        const dotsContainer = document.getElementById('carouselDots');
-        let index = 0;
+        // CAROUSEL
+        var track = document.querySelector('.carousel-track');
+        var slides = document.querySelectorAll('.carousel-slide');
+        var images = document.querySelectorAll('.gallery-img');
+        var prevBtn = document.querySelector('.prev');
+        var nextBtn = document.querySelector('.next');
+        var dotsContainer = document.getElementById('carouselDots');
+        var index = 0;
 
-        // Crear dots
-        slides.forEach((_, i) => {
-            const dot = document.createElement('button');
+        slides.forEach(function(_, i) {
+            var dot = document.createElement('button');
             dot.classList.add('dot');
-            dot.setAttribute('aria-label', `Ir a imagen ${i + 1}`);
             if (i === 0) dot.classList.add('active');
-            dot.addEventListener('click', () => goTo(i));
+            dot.addEventListener('click', function() { goTo(i); });
             dotsContainer.appendChild(dot);
         });
 
         function updateDots() {
-            document.querySelectorAll('.dot').forEach((d, i) => {
+            document.querySelectorAll('.dot').forEach(function(d, i) {
                 d.classList.toggle('active', i === index);
             });
         }
 
         function goTo(i) {
             index = i;
-            track.style.transform = `translateX(-${index * 100}%)`;
+            track.style.transform = 'translateX(-' + (index * 100) + '%)';
             updateDots();
         }
 
-        nextBtn.addEventListener('click', () => goTo((index + 1) % slides.length));
-        prevBtn.addEventListener('click', () => goTo((index - 1 + slides.length) % slides.length));
+        nextBtn.addEventListener('click', function() { goTo((index + 1) % slides.length); });
+        prevBtn.addEventListener('click', function() { goTo((index - 1 + slides.length) % slides.length); });
 
-        // Swipe en móvil
-        let startX = 0;
-        track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; });
-        track.addEventListener('touchend', e => {
-            const diff = startX - e.changedTouches[0].clientX;
-            if (Math.abs(diff) > 50) diff > 0 ? goTo((index + 1) % slides.length) : goTo((index - 1 + slides.length) % slides.length);
+        var startX = 0;
+        track.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; });
+        track.addEventListener('touchend', function(e) {
+            var diff = startX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 50) {
+                diff > 0 ? goTo((index + 1) % slides.length) : goTo((index - 1 + slides.length) % slides.length);
+            }
         });
 
-        // --- MODAL ---
-        const modal = document.getElementById("imageModal");
-        const modalImg = document.getElementById("modalImg");
-        const modalClose = document.getElementById("modalClose");
+        // MODAL
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("modalImg");
+        var modalClose = document.getElementById("modalClose");
 
-        images.forEach(img => {
-            img.addEventListener("click", function () {
+        images.forEach(function(img) {
+            img.addEventListener("click", function() {
                 modalImg.src = this.src;
-                modalImg.alt = this.alt;
                 modal.classList.add('active');
                 document.body.style.overflow = 'hidden';
             });
@@ -222,25 +217,27 @@
         }
 
         modalClose.addEventListener('click', closeModal);
-        modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
-        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+        modal.addEventListener('click', function(e) { if (e.target === modal) closeModal(); });
+        document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
 
-        // --- SCROLL ANIMATIONS ---
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('visible');
-            });
-        }, { threshold: 0.15 });
+        // SCROLL REVEAL
+        if ('IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) entry.target.classList.add('visible');
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+        } else {
+            document.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('visible'); });
+        }
 
-        document.querySelectorAll('.about-grid, .video-wrapper, .carousel, .play-container, .stat-card').forEach(el => {
-            observer.observe(el);
-        });
-
-        // --- SMOOTH SCROLL ---
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+        // SMOOTH SCROLL
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
             });
         });
 
